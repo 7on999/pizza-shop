@@ -24,12 +24,12 @@ const Home=()=>{
 
   const onSelectItem=React.useCallback((index)=>{
      dispatch(setCategoryAC(index));
-  }, [])
+  }, [dispatch])
 
 
   const onSelectSortBy=React.useCallback((kind)=>{
     dispatch(sortItems(kind));
- }, [])
+ }, [dispatch])
 
 const addPizzaToCart = (obj)=>{
   dispatch(addPizza(obj))
@@ -38,7 +38,7 @@ const addPizzaToCart = (obj)=>{
 
   React.useEffect(()=>{ 
     dispatch(fetchPizzas(categoryIndex, sortBy));
-  }, [categoryIndex, sortBy])
+  }, [categoryIndex, sortBy, dispatch])
   
     return (
         <div className="container">

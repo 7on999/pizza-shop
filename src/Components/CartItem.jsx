@@ -35,7 +35,7 @@ const CartItem = React.memo(({size,price, type, name, totalPizzas, totalCost, id
     dispatch(minusPizza(obj));
   }
 
-  console.log(totalPizzas)
+
     return (
         <div className="cart__item">
           <div className="cart__item-img">

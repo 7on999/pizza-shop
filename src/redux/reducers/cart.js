@@ -82,8 +82,8 @@ const initialState={
             case 'MINUS_PIZZA': {
 
                 let newItems = getDeepCopy(state.items);
-                const newArr1 = newItems[action.payload.id][action.payload.size].filter(obj=>obj.type!=action.payload.type);
-                const newArr2 = newItems[action.payload.id][action.payload.size].filter(obj=>obj.type==action.payload.type);
+                const newArr1 = newItems[action.payload.id][action.payload.size].filter(obj=>obj.type!==action.payload.type);
+                const newArr2 = newItems[action.payload.id][action.payload.size].filter(obj=>obj.type===action.payload.type);
                 newArr2.pop();
                 newItems[action.payload.id][action.payload.size]=[...newArr1, ...newArr2]
 
@@ -103,14 +103,14 @@ const initialState={
 
                 let newItems = getDeepCopy(state.items);
             
-                const newArr = newItems[action.payload.id][action.payload.size].filter(obj=>obj.type!=action.payload.type)
+                const newArr = newItems[action.payload.id][action.payload.size].filter(obj=>obj.type!==action.payload.type)
                 newItems[action.payload.id][action.payload.size]=[...newArr];
               
                 const allPizzasArr = getArrOfAllPizzas(newItems);
                 
     
-                const newUniqPizzas=state.uniqPizzas.filter(obj=>obj.type!=action.payload.type||
-                    obj.id!=action.payload.id||obj.size!=action.payload.size)
+                const newUniqPizzas=state.uniqPizzas.filter(obj=>obj.type!==action.payload.type||
+                    obj.id!==action.payload.id||obj.size!==action.payload.size)
 
                 const totalPrice=getTotalPrice(allPizzasArr);
                 return {

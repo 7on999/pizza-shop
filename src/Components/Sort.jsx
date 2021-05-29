@@ -2,7 +2,7 @@ import React from 'react';
 
 const SortWindow = React.memo(({kindsOfSort, activeSortBy, onSelectSortBy})=>{
 
-    console.log('rerender SORT WINDIW')
+    
     const [visiblePopup, setVisiblePopup] = React.useState(true);    
 
     const activeLabel = kindsOfSort.find((obj)=>obj.type===activeSortBy).name;
