@@ -10,6 +10,7 @@
 <li> react-router-dom </li>
 <li> axios </li>
 <li> redux-thunk </li>
+<li> little bit of Prop-types </li>
 </ul>
 
 <h3><i> Main menu: </i></h3>
