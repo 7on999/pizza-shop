@@ -11,6 +11,8 @@ const PizzaBlock = ({ addedCount, onClickAddPizza, name, id, imageUrl, price, ty
     const [activeTypeIndex, setActiveTypeIndex]=React.useState(types[0]);
     const [activeSizeIndex, setActiveSizeIndex]=React.useState(0);
 
+    const text = <span style={{ fontSize:'12px'}}> В данный момент выбранной пиццы нет в наличии </span>
+
     const toggleActiveItem=(index)=>{
         setActiveTypeIndex(index)
     }
@@ -67,7 +69,8 @@ const PizzaBlock = ({ addedCount, onClickAddPizza, name, id, imageUrl, price, ty
           </ul>
         </div>
         <div className="pizza-block__bottom">
-          <div className="pizza-block__price">от {price[activeSizeIndex]} ₽</div>
+          <div className="pizza-block__price"> {(+id===5||+id===9)&&activeSizeIndex===0? text : 
+          `от ${price[activeSizeIndex]} ₽`}</div>
           <Button onClick={ onAddPizza } id={id} activeSizeIndex={activeSizeIndex} className='button--add'  outline >
             <svg
               width="12"
