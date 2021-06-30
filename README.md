@@ -12,10 +12,11 @@
 <li> redux-thunk </li>
 <li> little bit of Prop-types </li>
 </ul>
+ 
 
 <h3><i> Main menu: </i></h3>
-<img src='https://psv4.userapi.com/c534536/u433674261/docs/d6/f32701accd99/pitstsa1.png?extra=X6RZKHdVC1ujj_HF_6zzSbmX5pNNlRlK9-lgbZTC1-5WDutjWTxK8urQ9QuYdpMlkrGaK454Bp3Wn49uI69JeDoo0HHBMIEaDDQ-yRqd7PSAMEthaEn2moOG1FvTSJo6zHMawSmqLZWF5xaU8OU4qA'/>
+<img src='![пицца1](https://user-images.githubusercontent.com/63980696/123979101-180b9c00-d9c9-11eb-90ce-31be80a73cc2.png)'/>
 
 <h3><i> shopping cart: </i></h3>
-<img src='https://psv4.userapi.com/c534536/u433674261/docs/d2/c2da17437340/pitstsa2.png?extra=SDpHaPLX9wFg-BmeRSpyphyckkyzeG49ATY9zmEZ7X-qYH-dvDAc6MV7WGRMfTJR7JwUSuC3nTMojRTKgXhf9b1u_XXJuncdbX1wcPvlxCFO2_n1txzWmGNAuiVUGRzyI6wrRxnWDrxTfh51E1zU8A'/>
+<img src='![пицца2](https://user-images.githubusercontent.com/63980696/123979155-23f75e00-d9c9-11eb-8306-e0ff7dbad3db.png)'/>
 
